@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyanclaro:#4ABEBD;
+    --Cyanmuyclaro:#71C1C2;
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(217, 22%, 67%);
+    --white:#ffffff;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: rgba(99, 161, 163, 0.925);
+}
+
+.main-container{
+    width: 313px;
+    margin: 72px auto;
+    border-radius: 5px;
+}
+
+.main-superior{
+    padding-top: 5px;
+    padding-left: 23px; 
+    background-color: var(--white); 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+}
+
+.main-superior p:nth-child(1){
+    margin-top: 30px;
+    font-weight: 700;
+    color: var(--Cyan);
+    font-size: 1.3em;  
+}
+
+.main-superior p:nth-child(2){
+    margin-top: 25px;
+    font-weight: 700;
+    color:var(--BrightYellow);
+    line-height: 22px;
+    padding-right: 25px;
+}
+
+.main-superior p:nth-child(3){
+    margin-top: 25px;
+    color:var(--GrayishBlue);
+    line-height: 22px;
+    font-size:0.85em;
+    padding-bottom: 35px;
+    padding-right: 20px;
+}
+
+.main-inferior .izquierda  {
+    background-color: var(--Cyan);
+    color: var(--white);
+    padding-bottom: 23px;
+   
+}
+
+.main-inferior .izquierda p:nth-child(1){
+    padding-top: 30px;
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+.main-inferior .izquierda .precio{
+    display: flex;
+    padding-left: 25px;
+    margin-top:16px ;
+}
+.main-inferior .izquierda .precio div:nth-child(1){
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.main-inferior .izquierda .precio div:nth-child(2){
+    color: var(--Cyanmuyclaro);
+    align-self: center;
+    margin-left: 10px;
+}
+
+.main-inferior .izquierda p:nth-child(3){
+    margin-top:10px ;
+    padding-left: 25px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+input[type="submit"]{
+    background-color: var(--BrightYellow);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 267px;
+    height: 49px;
+    font-weight: 700;    
+}
+
+.main-inferior .derecha{
+    padding-top: 23px;
+    background-color: var(--Cyanclaro);
+    padding-left: 25px;
+    padding-bottom: 28px;
+    padding-right: 108px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.main-inferior .derecha p{
+    color: var(--white);
+    font-size: 1.2em;
+}
+
+.main-inferior .derecha div{
+    margin-top: 23px;
+    color: var(--LightGray);
+    font-size: 0.85em;
+    line-height: 18px;
+    font-weight:initial;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 600px){
+
+   
+    .main-container{
+        display: grid;
+        width: 630px;
+        margin: auto;
+        border-radius: 5px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .main-superior{
+        padding-top: 10px;
+        padding-left: 40px; 
+        padding-right: 80px;
+        background-color: var(--white); 
+        border-top-left-radius: 5px; 
+        border-top-right-radius: 5px; 
+    }
+
+    .main-inferior{
+        display: flex;
+    }
+    .main-inferior .izquierda{
+        width: 50%;
+    }
+
+    .main-inferior .izquierda p:nth-child(1)p:nth-child(2){
+        padding-left: 40px;   
+    }
+
+    .main-inferior .derecha{
+        width: 50%;
+        padding-right: 98px;
+        padding-left: 40px;
+
+    }
+}
